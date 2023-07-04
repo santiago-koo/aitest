@@ -51,6 +51,24 @@
       "service": "Lambda"
     }
   },
+  "parameters": {
+    "AMPLIFY_function_interpretfunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "interpretfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_interpretfunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "interpretfunction"
+        }
+      ]
+    }
+  },
   "predictions": {
     "interpretText0a84b9e9": {
       "interpretType": "interpretText",

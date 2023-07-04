@@ -11,7 +11,7 @@
     "env": {
       "Type": "String"
     },
-    "comprehendapi": {
+    "interpretapi": {
       "Type": "String"
     }
   },
@@ -52,7 +52,7 @@
                       },
                       ":",
                       {
-                        "Ref": "comprehendapi"
+                        "Ref": "interpretapi"
                       },
                       "/",
                       {
@@ -82,7 +82,7 @@
                       },
                       ":",
                       {
-                        "Ref": "comprehendapi"
+                        "Ref": "interpretapi"
                       },
                       "/",
                       {
@@ -112,7 +112,7 @@
                       },
                       ":",
                       {
-                        "Ref": "comprehendapi"
+                        "Ref": "interpretapi"
                       },
                       "/",
                       {
@@ -142,7 +142,7 @@
                       },
                       ":",
                       {
-                        "Ref": "comprehendapi"
+                        "Ref": "interpretapi"
                       },
                       "/",
                       {
@@ -195,7 +195,7 @@
                       },
                       ":",
                       {
-                        "Ref": "comprehendapi"
+                        "Ref": "interpretapi"
                       },
                       "/",
                       {
@@ -225,7 +225,7 @@
                       },
                       ":",
                       {
-                        "Ref": "comprehendapi"
+                        "Ref": "interpretapi"
                       },
                       "/",
                       {
@@ -255,7 +255,7 @@
                       },
                       ":",
                       {
-                        "Ref": "comprehendapi"
+                        "Ref": "interpretapi"
                       },
                       "/",
                       {
@@ -285,7 +285,7 @@
                       },
                       ":",
                       {
-                        "Ref": "comprehendapi"
+                        "Ref": "interpretapi"
                       },
                       "/",
                       {

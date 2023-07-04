@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "comprehendapi": {
+    "interpretapi": {
       "ApiId": "string",
       "ApiName": "string",
       "RootUrl": "string"
@@ -18,7 +18,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "function": {
-    "comprehendfunction": {
+    "interpretfunction": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
@@ -27,7 +27,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "predictions": {
-    "interpretText6d48cc60": {
+    "interpretText0a84b9e9": {
       "region": "string",
       "type": "string"
     }

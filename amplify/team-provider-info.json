@@ -17,7 +17,16 @@
         "aitestfe94ea6b": {}
       },
       "function": {
-        "interpretfunction": {}
+        "interpretfunction": {
+          "deploymentBucketName": "amplify-aitest-dev-92553-deployment",
+          "s3Key": "amplify-builds/interpretfunction-2b307572495153527274-build.zip"
+        }
+      },
+      "predictions": {
+        "interpretText0a84b9e9": {}
+      },
+      "api": {
+        "interpretapi": {}
       }
     }
   }
