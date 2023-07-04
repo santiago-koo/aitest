@@ -27,5 +27,12 @@
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
     }
+  },
+  "predictions": {
+    "interpretText6d48cc60": {
+      "interpretType": "interpretText",
+      "providerPlugin": "awscloudformation",
+      "service": "Comprehend"
+    }
   }
 }
