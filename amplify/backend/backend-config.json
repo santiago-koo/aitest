@@ -1,4 +1,20 @@
 {
+  "api": {
+    "interpretapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "interpretfunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "aitestfe94ea6b": {
       "customAuth": false,
@@ -28,8 +44,15 @@
       "service": "Cognito"
     }
   },
+  "function": {
+    "interpretfunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "predictions": {
-    "interpretText6d48cc60": {
+    "interpretText0a84b9e9": {
       "interpretType": "interpretText",
       "providerPlugin": "awscloudformation",
       "service": "Comprehend"
