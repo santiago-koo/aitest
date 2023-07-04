@@ -19,7 +19,7 @@
       "function": {
         "interpretfunction": {
           "deploymentBucketName": "amplify-aitest-dev-92553-deployment",
-          "s3Key": "amplify-builds/interpretfunction-2b307572495153527274-build.zip"
+          "s3Key": "amplify-builds/interpretfunction-3137546b476266736437-build.zip"
         }
       },
       "predictions": {

@@ -1,1 +1,10 @@
-{ "test": "event" }
+{
+  "body": "{\"message\": \"Que mal que te hayas caído\"}",
+  "path": "/sentiment",
+  "httpMethod": "POST",
+  "isBase64Encoded": false,
+  "queryStringParameters": {},
+  "headers": {
+    "Content-type": "application/json"
+  }
+}
