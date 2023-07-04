@@ -10,6 +10,11 @@
       "StackName": "amplify-aitest-dev-92553",
       "StackId": "arn:aws:cloudformation:us-east-1:042654574406:stack/amplify-aitest-dev-92553/b09b3990-1a76-11ee-854e-12a655946d61",
       "AmplifyAppId": "drcffs9yuoph3"
+    },
+    "categories": {
+      "auth": {
+        "aitestfe94ea6b": {}
+      }
     }
   }
 }
