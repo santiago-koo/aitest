@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from utils import detect_sentiment, detect_language
+from comprehend import Comprehend
 
 sentiement_bp = Blueprint('sentiement', __name__)
 
@@ -8,8 +8,9 @@ def get_sentiment():
   request_args = request.get_json()
   message = request_args['message']
   if message is not None:
-    language_code = detect_language(message)
-    sentiment = detect_sentiment(message, language_code)
+    comprehend = Comprehend(message)
+    language_code = comprehend.detect_language()
+    sentiment = comprehend.detect_sentiment(language_code)
     return jsonify(data=sentiment)
   else:
     return jsonify(data='No message')
