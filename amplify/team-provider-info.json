@@ -20,6 +20,11 @@
         "interpretfunction": {
           "deploymentBucketName": "amplify-aitest-dev-92553-deployment",
           "s3Key": "amplify-builds/interpretfunction-69393234397841716153-build.zip"
+        },
+        "sessionsfunction": {},
+        "sessionfunction": {
+          "deploymentBucketName": "amplify-aitest-dev-92553-deployment",
+          "s3Key": "amplify-builds/sessionfunction-55377251336d4d38434b-build.zip"
         }
       },
       "predictions": {

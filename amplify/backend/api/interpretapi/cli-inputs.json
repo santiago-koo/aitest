@@ -8,11 +8,27 @@
         "setting": "protected",
         "auth": [
           "create",
-          "read"
+          "read",
+          "update",
+          "delete"
         ],
         "guest": [
           "create",
           "read"
+        ]
+      }
+    },
+    "/session": {
+      "name": "/session",
+      "lambdaFunction": "sessionfunction",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "delete"
+        ],
+        "guest": [
+          "create"
         ]
       }
     }
