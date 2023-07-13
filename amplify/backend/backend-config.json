@@ -60,19 +60,13 @@
     },
     "sessionfunction": {
       "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "sessionsfunction": {
-      "build": true,
       "dependsOn": [
         {
           "attributes": [
-            "ApiName",
-            "ApiId"
+            "UserPoolId"
           ],
-          "category": "api",
-          "resourceName": "interpretapi"
+          "category": "auth",
+          "resourceName": "aitestfe94ea6b"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -93,6 +87,14 @@
         {
           "category": "function",
           "resourceName": "interpretfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_sessionfunction_awsCognitoClientId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sessionfunction"
         }
       ]
     },

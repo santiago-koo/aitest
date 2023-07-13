@@ -1,3 +1,17 @@
 {
-  "lambdaLayers": []
+  "lambdaLayers": [],
+  "permissions": {
+    "auth": {
+      "aitestfe94ea6b": [
+        "create",
+        "read"
+      ]
+    }
+  },
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "awsCognitoClientId",
+      "environmentVariableName": "AWS_COGNITO_CLIENT_ID"
+    }
+  ]
 }

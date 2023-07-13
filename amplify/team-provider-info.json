@@ -19,12 +19,12 @@
       "function": {
         "interpretfunction": {
           "deploymentBucketName": "amplify-aitest-dev-92553-deployment",
-          "s3Key": "amplify-builds/interpretfunction-69393234397841716153-build.zip"
+          "s3Key": "amplify-builds/interpretfunction-62666f6747646b6e6462-build.zip"
         },
-        "sessionsfunction": {},
         "sessionfunction": {
           "deploymentBucketName": "amplify-aitest-dev-92553-deployment",
-          "s3Key": "amplify-builds/sessionfunction-55377251336d4d38434b-build.zip"
+          "s3Key": "amplify-builds/sessionfunction-716270586f6745325a6a-build.zip",
+          "awsCognitoClientId": "22te5uoch6c8drcr7kns732548"
         }
       },
       "predictions": {
