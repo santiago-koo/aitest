@@ -23,7 +23,7 @@
         },
         "sessionfunction": {
           "deploymentBucketName": "amplify-aitest-dev-92553-deployment",
-          "s3Key": "amplify-builds/sessionfunction-716270586f6745325a6a-build.zip",
+          "s3Key": "amplify-builds/sessionfunction-564b5146727a6c2f7435-build.zip",
           "awsCognitoClientId": "22te5uoch6c8drcr7kns732548"
         }
       },

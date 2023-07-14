@@ -7,21 +7,26 @@ cognito_auth_bp = Blueprint('cognito_auth', __name__)
 client = boto3.client("cognito-idp", region_name=os.getenv('REGION'))
 client_id = os.getenv('AWS_COGNITO_CLIENT_ID')
 
-@cognito_auth_bp.route('/sign_in', methods=['POST'])
+@cognito_auth_bp.route('/session/signin', methods=['POST'])
 def sign_in():
   request_args = request.get_json()
   username = request_args['email']
   password = request_args['password']
 
-  initiate_auth_response = client.initiate_auth(
-    ClientId=client_id,
-    AuthFlow="USER_PASSWORD_AUTH",
-    AuthParameters={"USERNAME": username, "PASSWORD": password},
-  )
+  try:
+    initiate_auth_response = client.initiate_auth(
+      ClientId=client_id,
+      AuthFlow="USER_PASSWORD_AUTH",
+      AuthParameters={"USERNAME": username, "PASSWORD": password},
+    )
 
-  return jsonify(data=initiate_auth_response)
+    return jsonify(data=initiate_auth_response)
+  except client.exceptions.NotAuthorizedException as e:
+    print(str(e))
+    return jsonify(data='Incorrect username or password.')
 
-@cognito_auth_bp.route('/sign_up', methods=['POST'])
+
+@cognito_auth_bp.route('/session/signup', methods=['POST'])
 def sign_up():
   request_args = request.get_json()
   username = request_args['email']
@@ -35,7 +40,7 @@ def sign_up():
   
   return jsonify(data=sign_up_response)
 
-@cognito_auth_bp.route('/confirm_sign_up', methods=['POST'])
+@cognito_auth_bp.route('/session/confirmsignup', methods=['POST'])
 def confirm_sign_up():
   request_args = request.get_json()
   username = request_args['email']

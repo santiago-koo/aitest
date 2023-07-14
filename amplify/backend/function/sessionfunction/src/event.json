@@ -1,1 +1,13 @@
-{ "test": "event" }
+{
+  "body": "eyJlbWFpbCI6ICJzYXBzOTUyOUBnbWFpbC5jb20iLCAicGFzc3dvcmQiOiAicGFzczEyM0FCQyJ9",
+  "path": "/session/signin",
+  "httpMethod": "POST",
+  "isBase64Encoded": true,
+  "queryStringParameters": {},
+  "multiValueQueryStringParameters": {},
+  "pathParameters": {},
+  "stageVariables": {},
+  "headers": {
+    "Content-type": "application/json"
+  }
+}

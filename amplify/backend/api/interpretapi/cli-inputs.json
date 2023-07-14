@@ -18,18 +18,25 @@
         ]
       }
     },
-    "/session": {
-      "name": "/session",
+    "/session/signin": {
+      "name": "/session/signin",
       "lambdaFunction": "sessionfunction",
       "permissions": {
-        "setting": "protected",
-        "auth": [
-          "create",
-          "delete"
-        ],
-        "guest": [
-          "create"
-        ]
+        "setting": "open"
+      }
+    },
+    "/session/signup": {
+      "name": "/session/signup",
+      "lambdaFunction": "sessionfunction",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/session/confirmsignup": {
+      "name": "/session/confirmsignup",
+      "lambdaFunction": "sessionfunction",
+      "permissions": {
+        "setting": "open"
       }
     }
   }
